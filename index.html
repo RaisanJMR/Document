@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Website | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="hamburger1.png"></img>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onClick="closeMenu()"></i>
+                <ul>
+                    <a href="">
+                        <li>HOME</li>
+                    </a>
+                    <a href="">
+                        <li>MENU</li>
+                    </a>
+                    <a href="">
+                        <li>RECIPIE</li>
+                    </a>
+                </ul>
+                <button type="button" class="btn">SIGN UP</button>
+
+            </div>
+            <i class="fa fa-bars" onClick="showMenu()"></i>
+        </div>
+        <div class="banner-title">
+            <h1>Food dosen't <span>relegion.<br>It's a</span> relegion.</h1>
+            <button type="button" class="btn">EXPLORE</button>
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fa fa-list"></i>
+                <i class="fa fa-search"></i>
+
+            </div>
+            <div class="social-icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-pinterest"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+
+        </div>
+        <div class="notifications">
+            <div class="contents">
+                <small>BANANA COOKIES by MURLIN</small>
+                <p><a href="">PREV</a><a href="">NEXT</a></p>
+            </div>
+            <div class="notification-img"></div>
+            <img src="thumb2.jpg">
+        </div>
+    </div>
+    <script>
+        var show = document.getElementById("nav-links")
+            function showMenu() {
+                show.style.right = "0";
+            }
+            function closeMenu() {
+                show.style.right = "-200px";
+            }
+        </script>
+</body>
+
+</html>
